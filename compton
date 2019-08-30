@@ -1,0 +1,76 @@
+# * General
+backend = "glx";
+glx-no-stencil = true;
+# TODO does this setting still exist?
+glx-copy-from-front = false;
+
+#vsync = none;
+
+# disable compositing on full screen windwos for performance
+unredir-if-possible = true;
+
+use-damage = true;
+
+# * Shadows
+shadow = true;
+
+shadow-exclude = [
+    "window_type = 'dock'",
+    "class_g = 'conky'",
+    "class_g = 'slop'",
+];
+
+# * Opacity
+# make Emacs slightly transparent
+opacity-rule = [
+    "85:class_g = 'kitty'",
+    "85:class_g = 'rofi'",
+];
+
+# * Blurring
+# blur background of transparent windows
+blur-background = true;
+blur-background-frame = true;
+#blur-background-fixed = false;
+
+blur-method = "kawase";
+blur-strength = 12;
+
+# * Fading
+fading = true;
+# decrease fade duration (ms)
+fade-delta = 2;
+fade-in-step = 0.03;
+fade-out-step = 0.03;
+
+# * Dimming
+inactive-dim = 0.05;
+
+fade-exclude = [
+    "class_g = 'slop'",
+];
+
+# * Focus
+# consider these windows always focused (so not dimmed)
+focus-exclude = [
+    "class_g = 'mpv'",
+    # prevents dimming whole screen with inactive-dim when using maim
+    "class_g = 'slop'",
+
+    # personal options
+    "class_g = 'brave'",
+    "class_g = 'discord'",
+];
+
+# * Window Type Settings
+wintypes:
+{
+    # e.g. Emacs tooltips
+    tooltip =
+    {
+        # fade = true;
+        # shadow = true;
+        # focus = true;
+        opacity = 0.85;
+    };
+};

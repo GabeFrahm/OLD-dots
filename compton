@@ -1,12 +1,11 @@
 # * General
 backend = "glx";
 glx-no-stencil = true;
-# TODO does this setting still exist?
 glx-copy-from-front = false;
 
 #vsync = none;
 
-# disable compositing on full screen windwos for performance
+# disable compositing on full screen windows for performance
 unredir-if-possible = true;
 
 use-damage = true;

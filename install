@@ -17,3 +17,9 @@ ln -sf $PWD/kitty ~/.config/kitty/kitty.conf
 
 echo [Install] Installing bashrc
 ln -sf $PWD/bashrc ~/.bashrc
+
+echo [Install] Installing cava configuration
+ln -sf $PWD/cava ~/.config/cava/config
+
+echo [Install] Installing polybar configuration
+ln -sf $PWD/polybar ~/.config/polybar/config.ini

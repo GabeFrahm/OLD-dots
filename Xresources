@@ -73,16 +73,16 @@ Xcursor.theme: xcursor-breeze
 Xcursor.size: 80
 
 
-rofi.modi:                           ssh,window,drun,run
+rofi.modi:                           drun
 rofi.sidebar-mode:                   true
 rofi.terminal:                       kitty
 rofi.ssh-client:                     ssh
 rofi.ssh-command:                    {terminal} -e "{ssh-client} {host}"
 rofi.opacity:                        90
-rofi.width:                          80
+rofi.width:                          70
 rofi.lines:                          8
 rofi.columns:                        1
-rofi.font:                           Inconsolata 40
+rofi.font:                           Roboto 35
 rofi.fg:                             #5294E2
 rofi.bg:                             #5d729f
 rofi.fg-active:                      #34405a

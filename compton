@@ -20,6 +20,7 @@ shadow-exclude = [
 opacity-rule = [
     "75:class_g = 'kitty'",
     "85:class_g = 'rofi'",
+    "90:class_g = 'code'",
 ];
 
 # * Blurring
@@ -29,14 +30,14 @@ blur-background-frame = true;
 #blur-background-fixed = false;
 
 blur-method = "kawase";
-blur-strength = 12;
+blur-strength = 8;
 
 # * Fading
-fading = false;
+fading = true;
 # decrease fade duration (ms)
-fade-delta = 1;
-fade-in-step = 0.3;
-fade-out-step = 0.3;
+fade-delta = 2;
+fade-in-step = .03;
+fade-out-step = .03;
 
 # * Dimming
 inactive-dim = 0.05;

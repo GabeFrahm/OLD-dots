@@ -74,7 +74,7 @@ Xcursor.size: 80
 
 
 rofi.modi:                           drun
-rofi.sidebar-mode:                   true
+rofi.sidebar-mode:                   false
 rofi.terminal:                       kitty
 rofi.ssh-client:                     ssh
 rofi.ssh-command:                    {terminal} -e "{ssh-client} {host}"
@@ -105,7 +105,7 @@ rofi.color-normal: #353944,  #FFFFFF,  #353944,  #5294E2,  #FFFFFF
 rofi.color-window: #353944,      #404552
 rofi.bw:                             10
 rofi.location:                       0
-rofi.padding:                        20
+rofi.padding:                        50
 rofi.levenshtein-sort:               true
 rofi.case-sensitive:                 false
 rofi.fuzzy:                          false

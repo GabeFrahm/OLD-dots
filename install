@@ -23,3 +23,5 @@ ln -sf $PWD/cava ~/.config/cava/config
 
 echo [Install] Installing polybar configuration
 ln -sf $PWD/polybar ~/.config/polybar/config.ini
+
+# Dunstrc

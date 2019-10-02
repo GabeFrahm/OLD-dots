@@ -332,3 +332,4 @@ mode "$mode_gaps_outer" {
 # Custom thingies
 exec_always compton &
 exec_always ~/.config/polybar/launch.sh
+exec_always wal -R

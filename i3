@@ -29,10 +29,7 @@ bindsym $mod+d exec rofi -show drun
 
 # Sound options
 exec --no-startup-id volumeicon
-exec --no-startup-id pulseaudio
-
-# I can't decide if I like this as a shortcut yet. Might fully delete later
-#bindsym $mod+Ctrl+m exec pavucontrol
+# exec --no-startup-id pulseaudio
 
 # Applications
 
@@ -333,3 +330,4 @@ mode "$mode_gaps_outer" {
 exec_always compton &
 exec_always ~/.config/polybar/launch.sh
 exec_always wal -R
+exec --no-startup-id pulseaudio

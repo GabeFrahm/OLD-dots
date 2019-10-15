@@ -1,0 +1,69 @@
+# * General
+backend = "glx";
+glx-no-stencil = true;
+glx-copy-from-front = false;
+
+#vsync = none;
+
+use-damage = true;
+
+# * Shadows
+shadow = true;
+shadow-radius = 10;
+
+shadow-exclude = [
+    "window_type = 'dock'",
+    "class_g = 'slop'",
+];
+
+# * Opacity
+opacity-rule = [
+    "75:class_g = 'kitty'",
+    "85:class_g = 'rofi'",
+    "90:class_g = 'code'",
+];
+
+# * Blurring
+# blur background of transparent windows
+blur-background = true;
+blur-background-frame = true;
+#blur-background-fixed = false;
+
+blur-method = "kawase";
+blur-strength = 12;
+
+# * Fading
+fading = true;
+# decrease fade duration (ms)
+fade-delta = 2;
+fade-in-step = .03;
+fade-out-step = .03;
+
+# * Dimming
+inactive-dim = 0.05;
+
+fade-exclude = [
+    "class_g = 'slop'",
+];
+
+# * Focus
+# consider these windows always focused (so not dimmed)
+focus-exclude = [
+    "class_g = 'mpv'",
+    "class_g = 'slop'",
+    "class_g = 'brave'",
+    "class_g = 'discord'",
+];
+
+# * Window Type Settings
+#wintypes:
+#{
+    # e.g. Emacs tooltips
+#    tooltip =
+#    {
+        # fade = true;
+        # shadow = true;
+        # focus = true;
+#        opacity = 0.85;
+#    };
+#};

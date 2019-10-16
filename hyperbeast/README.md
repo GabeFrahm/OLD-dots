@@ -8,3 +8,7 @@ You can easily create symlinks from this folder by running the install file by g
 ```
 ./install
 ```
+Then set colors and wallpaper with [pywal](https://github.com/dylanaraps/pywal)
+```
+wal -i 'hyperbeast.png'
+```

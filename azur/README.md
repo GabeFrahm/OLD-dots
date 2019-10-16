@@ -10,7 +10,8 @@ You can easily create symlinks from this folder by running the install file by g
 ```
 Then set colors and wallpaper with [pywal](https://github.com/dylanaraps/pywal)
 ```
-wal -i 'hyperbeast.png'
+wal -i 'azur.jpg'
 ```
 
 polybar config is a variation of polybar 4 from [here](https://github.com/adi1090x/polybar-themes/tree/master/polybar-4)
+This configuration uses the 'cyan' light color scheme

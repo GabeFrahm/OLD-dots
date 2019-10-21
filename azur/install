@@ -1,10 +1,10 @@
 #!/bin/sh
 
-#echo [Install] Installing i3 configuration
-#ln -sf $PWD/i3 ~/.i3/config
+echo [Install] Installing i3 configuration
+ln -sf $PWD/i3 ~/.i3/config
 
-#echo [Install] Installing compton configuration
-#ln -sf $PWD/compton ~/.config/compton.conf
+echo [Install] Installing compton configuration
+ln -sf $PWD/compton ~/.config/compton.conf
 
 echo [Install] Installing vim configuration
 ln -sf $PWD/vim ~/.vimrc
@@ -15,8 +15,8 @@ ln -sf $PWD/Xresources ~/.Xresources
 echo [Install] Installing kitty configuration
 ln -sf $PWD/kitty ~/.config/kitty/kitty.conf
 
-#echo [Install] Installing bashrc
-#ln -sf $PWD/bashrc ~/.bashrc
+echo [Install] Installing bashrc
+ln -sf $PWD/bashrc ~/.bashrc
 
 #echo [Install] Installing cava configuration
 #ln -sf $PWD/cava ~/.config/cava/config

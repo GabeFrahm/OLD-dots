@@ -333,5 +333,5 @@ exec_always eval ~/.fehbg
 exec --no-startup-id pulseaudio
 
 # Battery optimization
-exec --no-startup-id tlp start
-exec --no-startup-id powertop --auto-tune
+exec_always tlp start
+exec_always powertop --auto-tune

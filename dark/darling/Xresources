@@ -1,0 +1,116 @@
+# vim:fileencoding=utf-8:ft=conf:foldmethod=marker
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# __   __                                            
+# \ \ / /                                            
+#  \ V / _ __ ___  ___  ___  _   _ _ __ ___ ___  ___ 
+#   > < | '__/ _ \/ __|/ _ \| | | | '__/ __/ _ \/ __|
+#  / . \| | |  __/\__ \ (_) | |_| | | | (_|  __/\__ \
+# /_/ \_\_|  \___||___/\___/ \__,_|_|  \___\___||___/
+#
+# Config By: Gabe
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                    
+# For scaling, keep dpi multiples of 96
+Xft.dpi:       288
+# 288 = 96 * 3
+Xft.antialias: true
+Xft.hinting:   true
+Xft.rgba:      rgb
+Xft.autohint:  false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+XTerm*background:        #222D31
+XTerm*foreground:        #d8d8d8
+XTerm*pointerColor:      #1ABB9B
+XTerm*faceName:          Fixed
+XTerm*faceSize:          11
+XTerm*reverseVideo:      on
+XTerm*selectToClipboard: true
+
+*background:                      #222D31
+*foreground:                      #d8d8d8
+*fading:                          8
+*fadeColor:                       black
+*cursorColor:                     #1ABB9B
+*pointerColorBackground:          #2B2C2B
+*pointerColorForeground:          #16A085
+
+!! black dark/light
+*color0:                          #222D31
+*color8:                          #585858
+
+!! red dark/light
+*color1:                          #ab4642
+*color9:                          #ab4642
+
+!! green dark/light
+*color2:                          #7E807E
+*color10:                         #8D8F8D
+
+!! yellow dark/light
+*color3:                          #f7ca88
+*color11:                         #f7ca88
+
+!! blue dark/light
+*color4:                          #7cafc2
+*color12:                         #7cafc2
+
+!! magenta dark/light
+*color5:                          #ba8baf
+*color13:                         #ba8baf
+
+!! cyan dark/light
+*color6:                          #1ABB9B
+*color14:                         #1ABB9B
+
+!! white dark/light
+*color7:                          #d8d8d8
+*color15:                         #f8f8f8
+
+Xcursor.theme: xcursor-breeze
+Xcursor.size: 80
+
+
+rofi.modi:                           drun
+rofi.sidebar-mode:                   false
+rofi.terminal:                       kitty
+rofi.ssh-client:                     ssh
+rofi.ssh-command:                    {terminal} -e "{ssh-client} {host}"
+rofi.opacity:                        90
+rofi.width:                          65
+rofi.lines:                          8
+rofi.columns:                        1
+rofi.font:                           Roboto 35
+rofi.fg:                             #5294E2
+rofi.bg:                             #5d729f
+rofi.fg-active:                      #34405a
+rofi.fg-urgent:                      #34405a
+rofi.hlfg-active:                    #5e73a0
+rofi.hlfg-urgent:                    #5e73a0
+rofi.bg-active:                      #34405a
+rofi.bg-urgent:                      #34405a
+rofi.hlbg-active:                    #5d729f
+rofi.hlbg-urgent:                    #5d729f
+rofi.bgalt:                          #5671a0
+rofi.hlfg:                           #34405a
+rofi.hlbg:                           #34405a
+rofi.bc:                             #789ee1
+
+rofi.color-normal: #353944,  #FFFFFF,  #353944,  #5294E2,  #FFFFFF
+rofi.color-normal: #353944,  #FFFFFF,  #353944,  #5294E2,  #FFFFFF
+rofi.color-normal: #353944,  #FFFFFF,  #353944,  #5294E2,  #FFFFFF
+
+rofi.color-window: #353944,      #404552
+rofi.bw:                             10
+rofi.location:                       0
+rofi.padding:                        50
+rofi.levenshtein-sort:               true
+rofi.case-sensitive:                 false
+rofi.fuzzy:                          false
+rofi.line-margin:                    2
+rofi.separator-style:                solid
+rofi.hide-scrollbar:                 true
+rofi.markup-rows:                    false
+rofi.scrollbar-width:                8

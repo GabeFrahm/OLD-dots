@@ -153,5 +153,4 @@ alias fuck='sudo !!'
 alias wip='curl ipinfo.io'
 
 # get weather
-alias weather='curl v2.wttr.in/Charlotte'
 (cat ~/.cache/wal/sequences &)

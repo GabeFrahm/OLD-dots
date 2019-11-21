@@ -27,5 +27,5 @@ ln -sf $PWD/polybar ~/.config/polybar/config.ini
 echo [Install] Setting wallpaper and color scheme
 wal -i $PWD/hyperbeast.png -q
 
-echo [Install] Setting lock screen
-betterlockscreen -u $PWD/hyperbeast.png
+#echo [Install] Setting lock screen [WARNING: This may take a while] \n
+#betterlockscreen -u $PWD/hyperbeast.png

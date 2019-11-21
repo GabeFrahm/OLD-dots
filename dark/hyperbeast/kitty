@@ -77,7 +77,7 @@ click_interval -1.0
 # ~60 fps
 repaint_delay 6
 
-# sync_to_monitor yes
+sync_to_monitor yes
 
 #: }}}
 

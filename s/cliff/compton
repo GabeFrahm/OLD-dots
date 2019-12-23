@@ -1,0 +1,56 @@
+# * General
+backend = "glx";
+glx-no-stencil = true;
+glx-copy-from-front = false;
+
+vsync = false;
+
+use-damage = true;
+
+# * Shadows
+shadow = true;
+clear-shadow = true;
+shadow-radius = 7;
+shadow-offset-x = -7;
+shadow-offset-y = -7;
+
+shadow-exclude = [
+    "window_type = 'dock'",
+    "class_g = 'slop'",
+];
+
+# * Fading
+fading = true;
+# decrease fade duration (ms)
+fade-delta = 8;
+fade-in-step = .05;
+fade-out-step = .05;
+
+# * Dimming
+inactive-dim = 0;
+
+fade-exclude = [
+    "class_g = 'slop'",
+];
+
+# * Focus
+# consider these windows always focused (so not dimmed)
+focus-exclude = [
+    "class_g = 'mpv'",
+    "class_g = 'slop'",
+    "class_g = 'brave'",
+    "class_g = 'discord'",
+];
+
+# * Window Type Settings
+#wintypes:
+#{
+    # e.g. Emacs tooltips
+#    tooltip =
+#    {
+        # fade = true;
+        # shadow = true;
+        # focus = true;
+#        opacity = 0.85;
+#    };
+#};

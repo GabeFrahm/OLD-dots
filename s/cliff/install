@@ -1,0 +1,28 @@
+#!/bin/sh
+
+echo [Install] Installing i3 configuration
+ln -sf $PWD/i3 ~/.i3/config
+
+echo [Install] Installing compton configuration
+ln -sf $PWD/compton ~/.config/compton.conf
+
+echo [Install] Installing vim configuration
+ln -sf $PWD/vim ~/.vimrc
+
+#echo [Install] Installing Xresources configuration
+#ln -sf $PWD/Xresources ~/.Xresources
+
+echo [Install] Installing alacritty configuration
+ln -sf $PWD/alacritty ~/.config/alacritty.yml
+
+echo [Install] Installing zshrc
+ln -sf $PWD/zshrc ~/.zshrc
+
+echo [Install] Setting wallpaper
+feh --bg-fill $PWD/cliff.jpg
+
+
+## iejfiuejgiueg
+#echo [Install] Setting lock screen [WARNING: This may take a while] \n
+#betterlockscreen -u $PWD/cliff.jpg
+

@@ -105,10 +105,10 @@ rofi.color-normal: #353944,  #FFFFFF,  #353944,  #5294E2,  #FFFFFF
 rofi.color-window: #353944,      #404552
 rofi.bw:                             10
 rofi.location:                       0
-rofi.padding:                        50
+rofi.padding:                        75
 rofi.levenshtein-sort:               true
 rofi.case-sensitive:                 false
-rofi.fuzzy:                          false
+rofi.fuzzy:                          true
 rofi.line-margin:                    2
 rofi.separator-style:                solid
 rofi.hide-scrollbar:                 true

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo [Backup] Backing up all current files to the bak folder at $PWD
+cp ~/.i3/config $PWD/bak/
+cp ~/.config/compton.conf $PWD/bak/
+cp ~/.vimrc $PWD/bak/
+cp ~/.Xresources $PWD/bak/
+cp ~/.config/alacritty.yml $PWD/bak/
+cp ~/.zshrc $PWD/bak/
+cp ~/.config/dunst/dunstrc $PWD/bak

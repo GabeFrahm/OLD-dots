@@ -257,10 +257,8 @@ set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 #bar {
-#	i3bar_command i3bar
-#	status_command i3status
-#	position bottom
-
+#  i3_bar_command ~./.i3/lemonbar/i3_lemonbar.sh
+#}
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
@@ -325,11 +323,12 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-# Custom thingies
+# Custom things
 exec_always compton &
 exec --no-startup-id wal -R
 exec --no-startup-id pulseaudio
 exec --no-startup-id blurwal -m 1 -b 20 &
+exec --no-startup-id ~/.config/polybar/launch.sh
 
 # Battery optimization
 exec --no-startup-id tlp start

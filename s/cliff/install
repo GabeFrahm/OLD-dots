@@ -9,8 +9,8 @@ ln -sf $PWD/compton ~/.config/compton.conf
 echo [Install] Installing vim configuration
 ln -sf $PWD/vim ~/.vimrc
 
-#echo [Install] Installing Xresources configuration
-#ln -sf $PWD/Xresources ~/.Xresources
+echo [Install] Installing Xresources configuration
+ln -sf $PWD/Xresources ~/.Xresources
 
 echo [Install] Installing alacritty configuration
 ln -sf $PWD/alacritty ~/.config/alacritty.yml
@@ -21,6 +21,8 @@ ln -sf $PWD/zshrc ~/.zshrc
 echo [Install] Setting wallpaper
 feh --bg-fill $PWD/cliff.jpg
 
+echo [Install] Installing dunstrc
+ln -sf $PWD/dunstrc ~/.config/dunst/dunstrc
 
 ## iejfiuejgiueg
 #echo [Install] Setting lock screen [WARNING: This may take a while] \n

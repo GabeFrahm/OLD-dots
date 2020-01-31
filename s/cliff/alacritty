@@ -125,8 +125,7 @@ cursor:
 # Shell
 
 shell:
-  # TRYING OUT ZSH
-  program: /bin/zsh
+  program: /bin/bash
 
 # Key bindings
   # (Windows/Linux only)

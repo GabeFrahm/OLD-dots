@@ -80,7 +80,7 @@ rofi.ssh-client:                     ssh
 rofi.ssh-command:                    {terminal} -e "{ssh-client} {host}"
 rofi.opacity:                        90
 rofi.width:                          65
-rofi.lines:                          5
+rofi.lines:                          8
 rofi.columns:                        1
 rofi.font:                           Roboto 35
 rofi.fg:                             #5294E2

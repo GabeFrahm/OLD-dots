@@ -28,6 +28,13 @@ set noincsearch
 set noshowmatch
 set linebreak
 
+" Save yourself by setting a larger cache
+set viminfo='20,<1000,s1000
+
+" local vimrcs
+set exrc
+set secure
+
 " fixes 'Press ENTER or type command to continue'
 set shortmess=a
 set cmdheight=2
@@ -122,9 +129,12 @@ Plug 'tpope/vim-sensible'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-syntastic/syntastic'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
 Plug 'arcticicestudio/nord-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+" LOCAL DEV PLUGINS
+Plug '~/.vim/plugged/vim-presence'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }

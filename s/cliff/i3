@@ -327,7 +327,7 @@ mode "$mode_gaps_outer" {
 exec_always compton &
 exec --no-startup-id wal -R
 exec --no-startup-id pulseaudio
-exec --no-startup-id blurwal -m 1 -b 20 &
+exec --no-startup-id blurwal -m 1 -b 5 &
 exec --no-startup-id ~/.config/polybar/launch.sh
 
 # Battery optimization

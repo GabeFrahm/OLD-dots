@@ -1,0 +1,97 @@
+" designed for vim 8+. for more info and faq see:
+"    https://gitlab.com/skilstak/config/vim
+
+let skip_defaults_vim=1
+
+" standard stuff
+
+set number
+set nocompatible
+set ruler
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set smartindent
+set smarttab
+set autoindent
+set formatoptions=qrn1
+set cursorline
+set nobackup
+set noswapfile
+set nowritebackup
+set laststatus=0
+set icon
+set nohlsearch
+set noincsearch
+set noshowmatch
+set linebreak
+
+" Save yourself by setting a larger cache
+set viminfo='20,<1000,s1000
+
+" local vimrcs
+set exrc
+set secure
+
+" fixes 'Press ENTER or type command to continue'
+set shortmess=a
+set cmdheight=2
+
+syntax enable
+filetype plugin on
+
+" memory management
+
+set hidden
+set history=100
+
+" syntax helpers
+
+au bufnewfile,bufRead *.crontab set ft=crontab
+au bufnewfile,bufRead *ssh/config set filetype=sshconfig
+au bufnewfile,bufRead *gitconfig set filetype=gitconfig
+au bufnewfile,bufread /tmp/psql.edit.* set syntax=sql
+
+" displays all the syntax rules for current position
+
+function! <SID>SynStack()
+	if !exists("*synstack")
+		return
+	endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc  
+
+" start at last place you were editing
+
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" functions keys
+
+map <F1> :set number!<CR> :set relativenumber!<CR>
+nmap <F2> :call <SID>SynStack()<CR>
+set pastetoggle=<F3>
+map <F4> :set list!<CR>
+map <F5> :set cursorline!<CR>
+map <F7> :set spell!<CR>
+
+set rtp^=~/repos/private/vim
+
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'
+Plug 'vim-syntastic/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'arcticicestudio/nord-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'sheerun/vim-polyglot'
+
+" LOCAL DEV PLUGINS
+Plug '~/.vim/plugged/vim-presence'
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+call plug#end()
+
+colorscheme nord

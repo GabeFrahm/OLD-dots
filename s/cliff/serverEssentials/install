@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo [Install] Installing bash configuration
+ln -sf $PWD/bash ~/.bashrc
+
+echo [Install] Installing vim configuration
+ln -sf $PWD/vim ~/.vimrc
+

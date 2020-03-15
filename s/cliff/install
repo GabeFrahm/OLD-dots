@@ -3,6 +3,9 @@
 echo [Install] Installing i3 configuration
 ln -sf $PWD/i3 ~/.i3/config
 
+echo [Install] Installing bash configuration
+ln -sf $PWD/bash ~/.bashrc
+
 echo [Install] Installing compton configuration
 ln -sf $PWD/compton ~/.config/compton.conf
 
